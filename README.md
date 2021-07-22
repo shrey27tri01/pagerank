@@ -55,7 +55,7 @@ So the pagerank for a page `p` is defined as:
 - `i` ranges over all pages that link to page `p`,  
 - `NumLinks(i)` is the number of links present on page `i`
 
-Hence, we start by assuming the PageRank of every page is `1 / N` (i.e., equally likely to be on any page). Then, we use the above formula to calculate new PageRank values for each page, based on the previous PageRank values. We keep repeating this process, calculating a new set of PageRank values for each page based on the previous set of PageRank values, eventually the PageRank values converge (i.e., not change by more than a small threshold with each iteration (in this case, `0.001`)).
+Hence, we start by assuming the PageRank of every page is `1 / N` (i.e., equally likely to be on any page). Then, we use the above formula to calculate new PageRank values for each page, based on the previous PageRank values. We keep repeating this process, calculating a new set of PageRank values for each page based on the previous set of PageRank values, eventually the PageRank values converge (i.e., not change by more than a small threshold with each iteration (in this case, `0.001`).
 
 ## How to run
 ```
@@ -68,4 +68,4 @@ python pagerank.py corpus1
 ```
 
 ## Resources:
-[Wikipedia](https://en.wikipedia.org/wiki/PageRank), Stanford CS54N [Handout#24](https://web.stanford.edu/class/cs54n/handouts/24-GooglePageRankAlgorithm.pdf), [CS50](https://learning.edx.org/course/course-v1:HarvardX+CS50AI+1T2020/home)
+[Wikipedia](https://en.wikipedia.org/wiki/PageRank), [Stanford CS54N Handout#24](https://web.stanford.edu/class/cs54n/handouts/24-GooglePageRankAlgorithm.pdf), [CS50](https://learning.edx.org/course/course-v1:HarvardX+CS50AI+1T2020/home)
